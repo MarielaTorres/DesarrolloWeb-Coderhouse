@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fika Coffee</title>
+    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="header__Logo">
+        <a href="../index.html"> 
+            <img src="../assets/img/Logo.png" alt="Logo" class="centerLogo">
+        </a>
+    </div>  
+
+    <header>
+        <h1>Fika Coffee</h1>
+        <nav>
+            <ul class="header__navbar">
+                <li><a href="../index.html">Inicio</a> </li>
+                <li><a href="./Nosotros.html">Nosotros</a> </li>
+                <li><a href="./Galeria.html">Galeria</a></li>
+                <li><a href="./Menu.html">Menu</a></li>
+                <li><a href="./Contacto.html">Contacto</a></li>
+        
+            </ul>
+        </nav>
+    </header>
+
+      <section class="contacto">
+         <!-- <p class="contacto__parrafo">
+            Si tenes una duda o consulta, necesitas realizar una reserva ó queres dejarnos una recomendación ¡escribinos!
+        </p>   -->
+    
+    <form action="" class="form__contacto">
+        <h4>¡Contactanos!</h4>
+        
+            <input class= "controls" type="text" name="tnombre" id="tnombre" placeholder="Nombre">
+            <input class= "controls" type="text" name="apellido" id="apellido" placeholder="Apellido">
+            <input class= "controls" type="email" name="email" id="email" placeholder="Email">
+            <select class= "controls" name="tipoContacto" id="tipoContacto">
+                <option value="Seleccione la opción" disabled selected>Seleccione el motivo</option>
+                <option value="C">Consulta</option>
+                <option value="R">Reserva</option>
+                <option value=O>Sugerencia</option>
+
+            </select>
+
+            <textarea name="comentario" class="controls-grande" id="comentario" cols="30" rows="4" placeholder="Comentarios"></textarea>
+            <div>
+                <label for="condition">¿Desea recibir el newsletter?</label>
+                <input type="checkbox" name="condition" id="condition">
+            </div>    
+                
+
+
+            <div>
+                <input class= "botons" type="submit" value="Enviar">
+                <!-- <input class= "botons" type="reset" value="Borrar datos"> -->
+            </div><br>
+
+        
+    </form>
+</section>
+
+    <footer>
+        <p>Redes sociales, contacto, links</p>    
+    </footer>
+    
+</body>
+</html>

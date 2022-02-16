@@ -139,11 +139,36 @@ a:hover{
     background-color: #f1e199;
     padding: 10px;
     border: 2px outset #b8ac85;
-    font-size: 15px;
+    font-size: 18px;
+    font-family: 'Spartan';
     margin: 16px 0px;
-
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 2px #c9bc06;
     
  }
+
+ .form__contacto .botons:hover{
+    transform: scale(1.02);
+    background-color: #f1d143;
+    transition-duration: 0.5s;
+
+ }
+
+ .form__contacto .botons:active{
+    background-color: #256d28;
+  box-shadow: 0 3px #979696;
+  transform: translateY(10px);
+  transition-duration: 0.2s;
+ }
+
+ .form__contacto .botons:target{
+    transition-duration: 2s;
+    background-color: #0c6b4b  ;
+
+ }
+
+
 
  .form__contacto div{
      height: 40px;
@@ -219,6 +244,11 @@ footer{
     overflow: hidden;
     background: #ecdcbe;
     border: #797715 solid 2px ;
+}
+
+.galeria a:hover{
+    filter: contrast(115%);
+    transform: scale(1.2);
 }
 
 .galeria img{

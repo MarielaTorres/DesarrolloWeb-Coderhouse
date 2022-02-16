@@ -37,10 +37,10 @@
     <form action="" class="form__contacto">
         <h4>¡Contactanos!</h4>
         
-            <input class= "controls" type="text" name="tnombre" id="tnombre" placeholder="Nombre">
-            <input class= "controls" type="text" name="apellido" id="apellido" placeholder="Apellido">
-            <input class= "controls" type="email" name="email" id="email" placeholder="Email">
-            <select class= "controls" name="tipoContacto" id="tipoContacto">
+            <input required class= "controls" type="text" name="tnombre" id="tnombre" placeholder="Nombre">
+            <input required class= "controls" type="text" name="apellido" id="apellido" placeholder="Apellido">
+            <input required class= "controls" type="email" name="email" id="email" placeholder="Email">
+            <select required class= "controls" name="tipoContacto" id="tipoContacto">
                 <option value="Seleccione la opción" disabled selected>Seleccione el motivo</option>
                 <option value="C">Consulta</option>
                 <option value="R">Reserva</option>
@@ -48,7 +48,7 @@
 
             </select>
 
-            <textarea name="comentario" class="controls-grande" id="comentario" cols="30" rows="4" placeholder="Comentarios"></textarea>
+            <textarea required name="comentario" class="controls-grande" id="comentario" cols="30" rows="4" placeholder="Comentarios"></textarea>
             <div>
                 <label for="condition">¿Desea recibir el newsletter?</label>
                 <input type="checkbox" name="condition" id="condition">

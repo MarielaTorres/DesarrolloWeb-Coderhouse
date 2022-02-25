@@ -1,0 +1,23 @@
+#grid {
+    display: grid;
+    grid-template-areas: "header header header header header"
+        "section section section section section"
+        "div div div div div"
+        "footer footer footer footer footer";
+}
+
+
+
+header{
+    grid-area: header;
+}
+section {
+    grid-area: section;
+}
+
+div {
+    grid-area: div;
+}
+footer{
+    grid-area: footer;
+}

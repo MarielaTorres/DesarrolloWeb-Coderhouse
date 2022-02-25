@@ -1,0 +1,32 @@
+header {
+    position: sticky;
+    top: 0;
+    h1 {
+        color: #0c6b4b;
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+        background-color: #F5E9C3;
+        margin: 0px;
+
+    }
+
+    
+
+    .navbar-custom {
+        background-color: #608b6e;
+    }
+
+}
+.header__Logo {
+
+    background-image: url("../assets/img/fondoIcono.jpg");
+    background-size: cover;
+
+    
+}
+.centerLogo {
+    display: block;
+    margin: auto;
+    width: 130px;
+    height: 130px;
+}

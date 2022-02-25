@@ -1,0 +1,25 @@
+
+
+.galeria__img:hover {
+    filter: contrast(115%);
+    transform: scale(1.02);
+}
+
+.galeria__img {
+    width: 100%;
+    height: 300px;
+    vertical-align: top;
+    object-fit: cover;
+    border: #f0dd9e solid 2px;
+}
+
+.galeria__titulo {
+    text-align: center;
+    padding: 1rem;
+    color: #1c720b;
+    font-family: 'Spartan', sans-serif;
+}
+
+figure {
+    margin: 10px 5px;
+}

@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c8def3;
+}
+
+
+.img-carrusel {
+    height: 50vh;
+    object-fit: cover;
+}
+
+.detalle__index {
+
+    background-color: #e2e5e7;
+    font-family: 'Spartan';
+    padding: 3rem;
+
+}

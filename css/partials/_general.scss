@@ -31,3 +31,22 @@ a:hover {
     padding: 3rem;
 
 }
+
+.inicio__contenedor{
+    display: flex;
+    padding: 25px;
+    margin: 10px;
+    border-radius: 15px;
+    justify-content: space-around;
+    background-color: #bee0c8;
+
+}
+
+.inicio__contenedor__items{
+    width: 50%;
+    //flex-grow: 1; 
+    padding: 0px 5px;
+    object-fit: cover;  
+    border-radius: 18px;
+    font-family: 'Lato';
+}

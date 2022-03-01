@@ -95,6 +95,29 @@ footer {
   grid-area: footer;
 }
 
+.inicio__contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 25px;
+  margin: 10px;
+  border-radius: 15px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #bee0c8;
+}
+
+.inicio__contenedor__items {
+  width: 50%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 0px 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 18px;
+}
+
 .footer {
   background-color: #67A68A;
   padding: 60px 0;

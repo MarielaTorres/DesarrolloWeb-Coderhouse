@@ -21,3 +21,22 @@ div {
 footer{
     grid-area: footer;
 }
+
+.inicio__contenedor{
+    display: flex;
+    // flex-wrap: wrap;
+    padding: 25px;
+    margin: 10px;
+    border-radius: 15px;
+    justify-content: space-around;
+    background-color: #bee0c8;
+
+}
+
+.inicio__contenedor__items{
+    width: 50%;
+    flex-grow: 1; 
+    padding: 0px 10px;
+    object-fit: cover;  
+    border-radius: 18px;
+}

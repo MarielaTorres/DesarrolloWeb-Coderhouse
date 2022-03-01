@@ -3,6 +3,8 @@
     grid-template-areas: "header header header header header"
         "section section section section section"
         "div div div div div"
+        "div2 div2 div2 div2 div2"
+        "div3 div3 div3 div3 div3"
         "footer footer footer footer footer";
 }
 
@@ -17,6 +19,14 @@
 
 .div {
     grid-area: div;
+}
+
+.div2 {
+    grid-area: div2;
+}
+
+.div3 {
+    grid-area: div3;
 }
 .footer{
     grid-area: footer;

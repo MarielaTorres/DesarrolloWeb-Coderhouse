@@ -15,6 +15,7 @@ header h1 {
 
 header .navbar-custom {
   background-color: #608b6e;
+  z-index: 999;
 }
 
 .header__Logo {
@@ -93,6 +94,39 @@ a:hover {
 
 .inicio__contenedor-color3 {
   background-color: #C6F7C7;
+}
+
+.contenedor__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+
+.contenedor__menu__card {
+  width: 50%;
+  padding: 0px 10px;
+  border-radius: 18px;
+  font-family: 'Lato';
+  margin: 15px;
+  background-color: #f7f4e1;
+}
+
+.contenedor__menu__card__img {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 0 0 10px 5px;
+  border-radius: 50%;
 }
 
 #grid {

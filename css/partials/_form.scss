@@ -2,18 +2,19 @@
 .contacto {
     display: flex;
     justify-content: center;
+    padding: 15px;
 
     .form__contacto {
         width: 26rem;
         padding: 30px;
-        background-color: #f1d900;
+        background-color: #faf6d4;
         margin: auto;
         font-family: 'Spartan';
         color: #0a0000;
 
         &__controls {
             width: 100%;
-            background: #f1d900;
+            background: #faf6d4;
             padding: 10px;
             border-radius: 4px;
             margin-bottom: 16px;
@@ -25,7 +26,7 @@
         &__controls-grande {
             width: 100%;
             height: 8rem;
-            background: #f1d900;
+            background: #faf6d4;
             padding: 10px;
             border-radius: 4px;
             margin-bottom: 16px;
@@ -51,23 +52,24 @@
 
         &__botons {
             width: 100%;
-            color: #0d0d0e;
-            background-color: #f1e199;
-            padding: 10px;
-            border: 2px outset #b8ac85;
+            padding: 5px;
             font-size: 18px;
             font-family: 'Spartan';
             margin: 16px 0px;
-            cursor: pointer;
+            color: #0d0d0e;
+            background-color: #f1e199;
+            border: 2px outset #b8ac85;
             border-radius: 10px;
-            box-shadow: 0 2px #c9bc06;
-
+            box-shadow: 0 2px #53855a;
+            cursor: pointer;
+        
         }
 
         &__botons:hover {
             transform: scale(1.02);
-            background-color: #f1d143;
+            background-color: #a3c09c;
             transition-duration: 0.5s;
+            color: #faf6d4 ;
 
         }
 
@@ -86,3 +88,4 @@
 
     }
 }
+

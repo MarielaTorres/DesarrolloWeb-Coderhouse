@@ -64,17 +64,25 @@ a:hover {
     background-color: #C6F7C7; //#f7db90;
 }
 
+.subtitulo{
+    text-align: center;
+    padding: 1rem;
+    color: #1c720b;
+    font-family: 'Spartan', sans-serif;
+
+}
+
 .contenedor__menu {
     display: flex;
     margin: 10px;
     justify-content: space-around;
     align-content: center;
     flex-flow: column wrap;
-    
+
 }
 
 .contenedor__menu__card {
-    width: 50%;
+    width: 70%;
     padding: 0px 10px;
     border-radius: 18px;
     font-family: 'Lato';
@@ -88,5 +96,5 @@ a:hover {
     height: 150px;
     object-fit: cover;
     padding: 0 0 10px 5px;
-    border-radius: 50% ;
+    border-radius: 50%;
 }

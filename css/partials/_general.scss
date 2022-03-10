@@ -15,7 +15,7 @@ a {
 }
 
 a:hover {
-    color: #c8def3;
+    color: map-get($colores , secundario-beige);
 }
 
 
@@ -32,50 +32,129 @@ a:hover {
 
 }
 
-.inicio__contenedor {
+$colores:(
+    principal: #608b6e,
+    secundario-verde: #67A68A,
+    secundario-beige: #f0dd9e,
+    boton: #f1e199
+);
+
+@function color($colorelegido){
+    @return map-get($colores , $colorelegido);
+}
+
+@mixin flexcenter {
     display: flex;
+    justify-content: center;
+}
+
+@mixin flexsa {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+@mixin inicio__contenedor--generico($color) {
+    @include flexsa;
     padding: 25px;
     margin: 10px;
     border-radius: 15px;
-    justify-content: space-around;
-    background-color: #bee0c8;
+    background-color: $color;
+}
+
+@mixin card-font {
+    font-family: 'Spartan';
+    font-size: 15px;
+}
+
+@mixin card-item {
+    width: 50%;
+    padding: 0px 10px;
+    object-fit: cover;
+    border-radius: 18px;
+    font-family: 'Lato';
+}
+
+@mixin img-square($pixels) {
+    width: $pixels;
+    height: $pixels;
+}
+
+/* 
+@for $i from 1 through 3 {
+    .inicio__contenedor-color#{i} {
+        //@include inicio__contenedor--generico(#bee0c8);
+        @include flexcenter;
+        padding: 25px;
+        margin: 10px;
+        border-radius: 15px;
+        justify-content: space-around;
+        background-color: #bee0c8;
+
+        p {
+            font-family: 'Spartan';
+            font-size: 15px;
+        }
+
+        &__items {
+            width: 50%;
+            padding: 0px 10px;
+            object-fit: cover;
+            border-radius: 18px;
+            font-family: 'Lato';
+
+        }
+    }
+}
+ */
+
+
+.inicio__contenedor {
+    @include inicio__contenedor--generico(#bee0c8);
 
     p {
-        font-family: 'Spartan';
-        font-size: 15px;
+        @include card-font;
     }
 
     &__items {
-        width: 50%;
-        padding: 0px 10px;
-        object-fit: cover;
-        border-radius: 18px;
-        font-family: 'Lato';
-
+        @include card-item;
     }
 
 }
 
 .inicio__contenedor-color2 {
-    background-color: #CDEDBE; //#f7db90;
+    @include inicio__contenedor--generico(#CDEDBE);
+    p {
+        @include card-font;
+    }
+
+    &__items {
+        @include card-item;
+    }
 }
 
 .inicio__contenedor-color3 {
-    background-color: #C6F7C7; //#f7db90;
+    @include inicio__contenedor--generico(#C6F7C7);
+    p {
+        @include card-font;
+    }
+
+    &__items {
+        @include card-item;
+    }
 }
 
-.subtitulo{
+.subtitulo {
     text-align: center;
     padding: 1rem;
-    color: #1c720b;
+    color: map-get($colores , principal);;
     font-family: 'Spartan', sans-serif;
 
 }
 
 .contenedor__menu {
-    display: flex;
+    @include flexsa;
     margin: 10px;
-    justify-content: space-around;
     align-content: center;
     flex-flow: column wrap;
 
@@ -87,13 +166,12 @@ a:hover {
     border-radius: 18px;
     font-family: 'Lato';
     margin: 15px;
-    background-color: #f7f4e1;
+    background-color: map-get($colores , secundario-beige);
 
 }
 
 .contenedor__menu__card__img {
-    width: 150px;
-    height: 150px;
+    @include img-square(150px);
     object-fit: cover;
     padding: 0 0 10px 5px;
     border-radius: 50%;

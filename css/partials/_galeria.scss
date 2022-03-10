@@ -10,7 +10,7 @@
     height: 300px;
     vertical-align: top;
     object-fit: cover;
-    border: #f0dd9e solid 2px;
+    border: map-get($colores , secundario-beige) solid 2px;
 }
 
 figure {

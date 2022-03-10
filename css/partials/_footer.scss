@@ -1,5 +1,5 @@
 .footer {
-    background-color: #67A68A;
+    background-color: map-get($colores , secundario-verde);
     padding: 60px 0;
 
     p {
@@ -13,9 +13,9 @@
         margin: auto;
 
         .footer__row {
-            display: flex;
+            @include flexsa;
             flex-wrap: wrap;
-            justify-content: space-around;
+
 
             .footer-col {
                 width: 25%;
@@ -28,9 +28,8 @@
                 }
 
                 .social-links a {
+                    @include img-square(40px);
                     display: inline-block;
-                    height: 40px;
-                    width: 40px;
                     background-color: #0b3321;
                     border-radius: 50%;
                     line-height: 40px;

@@ -29,5 +29,38 @@
 
     }
 
+    .inicio__contenedor {
+        @include inicio__contenedor--generico(#bee0c8);
+    
+        p {
+            @include card-font;
+        }
+    
+        &__items {
+            @include card-item;
+        }
+    
+    }
+    
+    .inicio__contenedor-color2 {
+        p {
+            @include card-font-mobile;
+        }
+    
+        &__items {
+            @include card-item-mobile;
+        }
+    }
+    
+    .inicio__contenedor-color3 {
+        p {
+            @include card-font-mobile;
+        }
+    
+        &__items {
+            @include card-item-mobile;
+        }
+    }
+
 
 }

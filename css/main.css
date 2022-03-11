@@ -434,7 +434,7 @@ figure {
 /*MEDIA QUERIES*/
 @media screen and (max-width: 425px) {
   #grid {
-        grid-template-areas: "header" "div" "section" "footer";
+        grid-template-areas: "header" "section" "div" "div2" "div3" "footer";
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }

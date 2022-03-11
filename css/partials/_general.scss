@@ -67,6 +67,11 @@ $colores:(
     font-size: 15px;
 }
 
+@mixin card-font-mobile {
+    font-family: 'Spartan';
+    font-size: 10px;
+}
+
 @mixin card-item {
     width: 50%;
     padding: 0px 10px;
@@ -75,6 +80,13 @@ $colores:(
     font-family: 'Lato';
 }
 
+@mixin card-item-mobile {
+    width: 50%;
+    padding: 0px 5px;
+    object-fit: cover;
+    border-radius: 18px;
+    font-family: 'Lato';
+}
 @mixin img-square($pixels) {
     width: $pixels;
     height: $pixels;

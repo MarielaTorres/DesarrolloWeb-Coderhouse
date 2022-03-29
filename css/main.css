@@ -123,12 +123,79 @@ a:hover {
   width: 50%;
 }
 
+.contenedor__menu__card__text {
+  padding: 5px;
+  width: 60%;
+}
+
 .contenedor__menu__card__img {
   width: 150px;
   height: 150px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
+}
+
+.nosotros {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Spartan";
+}
+
+.nosotros__container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.nosotros__container__card {
+  width: 50%;
+  padding: 15px;
+  box-shadow: 5px 5px 10px 0px #071f0d;
+}
+.nosotros__container__card__f {
+  transition: 0.5s;
+}
+.nosotros__container__card__f1 {
+  background: #67A68A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.nosotros__container__card:hover .nosotros__container__card__content {
+  opacity: 1;
+}
+
+.nosotros__container__card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+.nosotros__container__card__content h3 {
+  color: white;
+  padding: 10px;
+}
+.nosotros__container__card__content p {
+  font-size: 15px;
+  padding: 15px;
+}
+
+.nosotros__img {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.2;
+  transform: 0.5s;
+}
+
+.nosotros__img:hover {
+  opacity: 1;
 }
 
 header {
@@ -147,6 +214,7 @@ header .navbar-custom {
   background-color: #608b6e;
   font-size: 19px;
   font-family: "Lato";
+  z-index: 999;
 }
 
 .header__Logo {

@@ -4,15 +4,13 @@
     box-sizing: border-box;
 }
 
-$colores:(
-    principal: #608b6e,
+$colores:(principal: #608b6e,
     secundario-verde: #67A68A,
     secundario-beige: #f0dd9e,
-    boton: #f1e199
-);
+    boton: #f1e199);
 
-@function color($colorelegido){
-    @return map-get($colores , $colorelegido);
+@function color($colorelegido) {
+    @return map-get($colores, $colorelegido);
 }
 
 ul {
@@ -26,7 +24,7 @@ a {
 }
 
 a:hover {
-    color: map-get($colores , secundario-beige);
+    color: map-get($colores, secundario-beige);
 }
 
 
@@ -88,6 +86,7 @@ a:hover {
     border-radius: 18px;
     font-family: 'Lato';
 }
+
 @mixin img-square($pixels) {
     width: $pixels;
     height: $pixels;
@@ -108,6 +107,7 @@ a:hover {
 
 .inicio__contenedor-color2 {
     @include inicio__contenedor--generico(#CDEDBE);
+
     p {
         @include card-font;
     }
@@ -119,6 +119,7 @@ a:hover {
 
 .inicio__contenedor-color3 {
     @include inicio__contenedor--generico(#C6F7C7);
+
     p {
         @include card-font;
     }
@@ -131,7 +132,7 @@ a:hover {
 .subtitulo {
     text-align: center;
     padding: 1rem;
-    color: map-get($colores , principal);
+    color: map-get($colores, principal);
     font-family: 'Spartan';
 
 }
@@ -151,17 +152,96 @@ a:hover {
     border-radius: 18px;
     font-family: 'Lato';
     margin: 15px;
-    align-items:center;
-    background-color: map-get($colores , secundario-beige);
+    align-items: center;
+    background-color: map-get($colores, secundario-beige);
 
-    &__items{
+    &__items {
         width: 50%;
     }
 
+}
+
+.contenedor__menu__card__text {
+    padding: 5px;
+    width: 60%;
 }
 
 .contenedor__menu__card__img {
     @include img-square(150px);
     object-fit: cover;
     border-radius: 50%;
+}
+
+
+.nosotros {
+    margin: 0px;
+    padding: 0px;
+    //min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Spartan';
+
+
+}
+
+.nosotros__container {
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    &__card {
+        width: 50%;
+        padding: 15px;
+        box-shadow: 5px 5px 10px 0px #071f0d;
+        
+        &__f {
+            transition: 0.5s;
+            
+        }
+        &__f1 {
+            background: map-get($colores, secundario-verde );
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+        
+        }
+       
+    }
+    &__card:hover{
+        .nosotros__container__card__content{
+            opacity: 1;
+        }
+        
+    }
+}
+
+.nosotros__container__card__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    h3{
+        color: white;
+        padding: 10px;
+    }
+    p{
+        font-size: 15px;    
+        padding: 15px;
+    }
+}
+
+
+.nosotros__img {
+    @include img-square(80px);
+
+    object-fit:cover;
+    opacity: 0.2;
+    transform: 0.5s;
+}
+
+.nosotros__img:hover{
+    opacity: 1;
 }

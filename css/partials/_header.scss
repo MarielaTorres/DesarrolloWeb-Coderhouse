@@ -15,6 +15,7 @@ header {
         background-color: map-get($colores , principal);
         font-size: 19px;
         font-family: 'Lato';
+        z-index: 999;
     }
 
 }

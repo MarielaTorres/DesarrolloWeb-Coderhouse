@@ -1,4 +1,3 @@
-/*MEDIA QUERIES*/
 @media screen and (max-width: 425px) {
     #grid {
         grid-template-areas: "header""section""div""div2""div3""footer";
@@ -31,36 +30,82 @@
 
     .inicio__contenedor {
         @include inicio__contenedor--generico(#bee0c8);
-    
+
         p {
             @include card-font;
         }
-    
+
         &__items {
             @include card-item;
         }
-    
+
     }
-    
+
     .inicio__contenedor-color2 {
         p {
             @include card-font-mobile;
         }
-    
+
         &__items {
             @include card-item-mobile;
         }
     }
-    
+
     .inicio__contenedor-color3 {
         p {
             @include card-font-mobile;
         }
-    
+
         &__items {
             @include card-item-mobile;
         }
     }
 
+    .contenedor__menu__card {
+        width: 100%;
+        padding: 5px;
+        border-radius: 18px;
+        margin: 5px;
 
+        &__items {
+            width: 50%;
+        }
+
+        h4 {
+            font-size: 16px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+
+    }
+
+    .contenedor__menu__card__img {
+        @include img-square(100px);
+        border-radius: inherit;
+    }
+
+
+    .contacto {
+        flex-flow: column wrap;
+        padding: 0px;
+        margin: 1% 5%;
+
+        .form__img {
+            width: 100%;
+            
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+
+            }
+        }
+
+        .form__contacto {
+            width: 100%;
+            padding: 15px;
+        }
+    }
 }

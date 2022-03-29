@@ -1,6 +1,7 @@
 header {
     position: sticky;
     top: 0;
+
     h1 {
         color: map-get($colores , principal);
         font-family: 'Lato', sans-serif;
@@ -12,9 +13,8 @@ header {
 
     .navbar-custom {
         background-color: map-get($colores , principal);
-        z-index: 999;
-        font-family: 'Lato';
         font-size: 19px;
+        font-family: 'Lato';
     }
 
 }

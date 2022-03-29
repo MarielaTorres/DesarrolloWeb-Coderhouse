@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+$colores:(
+    principal: #608b6e,
+    secundario-verde: #67A68A,
+    secundario-beige: #f0dd9e,
+    boton: #f1e199
+);
+
+@function color($colorelegido){
+    @return map-get($colores , $colorelegido);
+}
+
 ul {
     list-style: none;
 }
@@ -32,16 +43,6 @@ a:hover {
 
 }
 
-$colores:(
-    principal: #608b6e,
-    secundario-verde: #67A68A,
-    secundario-beige: #f0dd9e,
-    boton: #f1e199
-);
-
-@function color($colorelegido){
-    @return map-get($colores , $colorelegido);
-}
 
 @mixin flexcenter {
     display: flex;
@@ -92,35 +93,6 @@ $colores:(
     height: $pixels;
 }
 
-/* 
-@for $i from 1 through 3 {
-    .inicio__contenedor-color#{i} {
-        //@include inicio__contenedor--generico(#bee0c8);
-        @include flexcenter;
-        padding: 25px;
-        margin: 10px;
-        border-radius: 15px;
-        justify-content: space-around;
-        background-color: #bee0c8;
-
-        p {
-            font-family: 'Spartan';
-            font-size: 15px;
-        }
-
-        &__items {
-            width: 50%;
-            padding: 0px 10px;
-            object-fit: cover;
-            border-radius: 18px;
-            font-family: 'Lato';
-
-        }
-    }
-}
- */
-
-
 .inicio__contenedor {
     @include inicio__contenedor--generico(#bee0c8);
 
@@ -159,8 +131,8 @@ $colores:(
 .subtitulo {
     text-align: center;
     padding: 1rem;
-    color: map-get($colores , principal);;
-    font-family: 'Spartan', sans-serif;
+    color: map-get($colores , principal);
+    font-family: 'Spartan';
 
 }
 
@@ -173,18 +145,23 @@ $colores:(
 }
 
 .contenedor__menu__card {
+    @include flexsa;
     width: 70%;
-    padding: 0px 10px;
+    padding: 15px;
     border-radius: 18px;
     font-family: 'Lato';
     margin: 15px;
+    align-items:center;
     background-color: map-get($colores , secundario-beige);
+
+    &__items{
+        width: 50%;
+    }
 
 }
 
 .contenedor__menu__card__img {
     @include img-square(150px);
     object-fit: cover;
-    padding: 0 0 10px 5px;
     border-radius: 50%;
 }
